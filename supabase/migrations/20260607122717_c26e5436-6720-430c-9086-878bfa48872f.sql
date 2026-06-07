@@ -1,0 +1,1 @@
+ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS age integer, ADD COLUMN IF NOT EXISTS contact_number text; ALTER TABLE public.profiles ADD CONSTRAINT profiles_age_check CHECK (age IS NULL OR (age >= 1 AND age <= 120));
